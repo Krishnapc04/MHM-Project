@@ -11,12 +11,13 @@ if(activepage=='/MHM-Project/'){
             link.classList.remove('active')
         }
     })
+}else{
+    myarray.forEach(link=>{
+        if(link.firstChild.href.includes(`${activepage}`)){
+            link.classList.add('active')
+        }
+    })
 }
-myarray.forEach(link=>{
-    if(link.firstChild.href.includes(`${activepage}`)){
-        link.classList.add('active')
-    }
-})
 
 
 
