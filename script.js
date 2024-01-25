@@ -5,11 +5,19 @@ const navlink = document.querySelectorAll('.nav-option .opts')
     //   make hover effect visible after page change 
 
 let myarray = Array.from(navlink)
+if(activepage=='/MHM-Project/'){
+    myarray.forEach(link=>{
+        if(link.firstChild.href.includes(`${activepage}`)){
+            link.classList.remove('active')
+        }
+    })
+}
 myarray.forEach(link=>{
     if(link.firstChild.href.includes(`${activepage}`)){
         link.classList.add('active')
     }
 })
+
 
 
       // MAke navbars working

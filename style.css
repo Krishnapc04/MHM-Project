@@ -246,6 +246,8 @@ nav{
     .event-1,.event-2{
         flex-direction: column !important;
         width: 90vw;
+        padding-left: 0px !important;
+        padding-right: 0px !important;
     }
     .recent-events{
         & img{
@@ -258,7 +260,7 @@ nav{
     }
     .E-1-heading, .E-2-heading{
         & h2{
-            font-size: 2rem;
+            font-size: 1.6rem;
         }
     }
 
@@ -274,9 +276,9 @@ nav{
         width: 56.5%;
     } */
     .main-screen{
-        background-color: red;
+        background-color: #b000fe;
         position: relative;
-        height: 104vh;
+        height: 112vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
