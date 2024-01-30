@@ -71,27 +71,35 @@ nav{
 .main-screen{
     background-color: #b000fe;
     position: relative;
-    height: 100vh;
+    height: 70rem;
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
+    flex-direction: column-reverse;
+    padding-top: 10rem;
 
     & .screen-img{
         & img{
-            width: 40vh;
+            margin-top: -1rem;
+            margin-bottom: 4rem;
+            filter: drop-shadow(3px 3px 20px black);
+            width: 11rem;
             }
     }
     & .screen-heading{
 
-        width: 60%;
+        width: 80%;
         & h1{
             font-size: 12vh;
             margin-top: -1rem;
         }
+        & p{
+            font-size: x-large;
+        }
 
     }
 }
-
+/* ---------------------------------------------CUSTOM SHAPE --------------------------------- */
     
 .custom-shape-divider-bottom-1706095908 {
     position: absolute;
@@ -121,7 +129,7 @@ nav{
 
 
 
-/* ----------------------------------------------------------------------------------------------------------------------------- */
+/* -----------------------------------------------------------RECENT EVE------------------------------------------------------------------ */
 .recent-events{
     /* width: 100vw; */
     margin-top: 3rem;
@@ -147,7 +155,7 @@ nav{
 
     }
     & img{
-        width: 70vh;
+        width: 40vw;
         border-radius: 5px;
         margin: 10px 0;
         transition: all .5s;
@@ -251,10 +259,10 @@ nav{
     }
     .recent-events{
         & img{
-            width: 80vw;
+            width: 78vw;
         }
         & h1{
-            font-size: 3rem;
+            font-size: 3rem !important;
             text-align: center;
         }
     }
@@ -263,39 +271,47 @@ nav{
             font-size: 1.6rem;
         }
     }
+}
+@media (width < 580px){
+    .main-screen{
+        height:60rem;
+    }
+}
+@media (width < 434px){
+    .main-screen{
+        height:50rem;
+    }
+}
 
-} 
 
 @media (width<670px){
     .nav-option{
         top: 79px;
     }
 }
+
+
 @media (width < 712px){
-    /* .nav-headi{
-        width: 56.5%;
-    } */
     .main-screen{
         background-color: #b000fe;
         position: relative;
-        height: 112vh;
         display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: column-reverse;
         align-items: center;
     
         & .screen-img{
-            display: none;
             & img{
-                width: 40vh;
+                width: 30vw;
                 }
         }
         & .screen-heading{
-            margin-top: -7rem;
             width: 90%;
             & h1{
-                font-size: 15vw;
+                font-size: 15vw ;
                 margin-top: -1rem;
+            }
+            & p{
+                font-size: 2vh;
             }
     
         }
