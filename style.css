@@ -3,23 +3,46 @@
     padding: 0;
     box-sizing: border-box;
 }
-nav{
-    position: fixed;
-    z-index: 4;
-    width: 100vw;
+body {
+    /* Specify the background image URL */
+    background-image: url('Background.png');
+    /* Set background image properties */
+    background-size: cover; /* Cover the entire background */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Do not repeat the background image */
+    /* Add transparency to the navbar */
+    padding-top: 1px;
 }
-.mh-navbar{
+
+.team-section {
+    /* Add padding to create some space between sections */
+    padding: 50px 0;
+    /* Add a background color to provide better readability */
+    background-color: rgba(255, 255, 255, 0); /* Adjust opacity as needed */
+}
+
+.mh-navbar {
     display: flex;
     flex-direction: row;
     align-items: center;
     position: relative;
     padding-top: 1rem;
-    background-color: white;
-    & a img{
-        height: 3.5rem;
-        margin-right: 1rem;
-    }
+    background-color: rgba(255, 255, 255, 0.5); /* 90% opacity white */
 }
+
+.mh-navbar a img {
+    height: 3.5rem;
+    margin-right: 1rem;
+}
+
+
+nav{
+    position: fixed;
+    z-index: 4;
+    width: 100vw;
+}
+
+
 .nav-headi{
     width: 48.5%;
 }
@@ -329,4 +352,49 @@ nav{
         }
 
     }
+}
+
+/* ----------------------------TEAMS---------=-------------------------------------------- */
+
+
+.team-section {
+    margin-top: 100px;
+}
+
+.team-members {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.member-card {
+    margin: 10px;
+    text-align: center;
+}
+
+.member-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.member-info {
+    display: none;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.member-card:hover .member-info {
+    display: block;
+}
+
+.member-card:hover .member-image {
+    transform: scale(1.1);
 }
