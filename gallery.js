@@ -1,10 +1,8 @@
 const galleryDisplayContainerSection1 = document.getElementById('gallery-display-container-section-1');
 const galleryDisplayContainerSection2 = document.getElementById('gallery-display-container-section-2');
-// Add more variables for additional sections as needed
 
 var gridItemsSection1;
 var gridItemsSection2;
-// Add more variables for additional sections as needed
 
 const imgDisplayContainer = document.getElementById('img-display-container');
 const close = document.getElementById('close');
@@ -15,7 +13,6 @@ const right = document.getElementById('right');
 
 var imagesSection1;
 var imagesSection2;
-// Add more variables for additional sections as needed
 
 var index;
 var n;
@@ -34,7 +31,6 @@ const getImages = (url, callback) => {
     request.send();
 };
 
-// Populate images for Section 1
 getImages('section1.json', (err, data) => {
     if (err) {
         console.log(err);
@@ -44,7 +40,6 @@ getImages('section1.json', (err, data) => {
     }
 })
 
-// Populate images for Section 2
 getImages('section2.json', (err, data) => {
     if (err) {
         console.log(err);
@@ -53,8 +48,7 @@ getImages('section2.json', (err, data) => {
         populate(imagesSection2, galleryDisplayContainerSection2);
     }
 })
-// Add more getImages calls for additional sections as needed
-
+\
 function populate(images, galleryDisplayContainer) {
     n = images.length;
     for (let i = 0; i < n; i++) {
